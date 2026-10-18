@@ -1,0 +1,100 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Precios Farmatodo · Colgate vs competencia</title>
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#c8102e">
+<link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Precios">
+<style>
+:root{--rojo:#c8102e;--ink:#1f2933;--mut:#6b7785;--bg:#f4f6f8;--card:#fff;--line:#e3e8ee;--ok:#12805c;--mal:#c8102e}
+*{box-sizing:border-box}body{font:15px/1.4 system-ui,"Segoe UI",sans-serif;margin:0;color:var(--ink);background:var(--bg)}
+header{background:var(--rojo);color:#fff;padding:18px 24px}header h1{margin:0;font-size:22px}header p{margin:4px 0 0;opacity:.9;font-size:14px}
+main{max-width:1150px;margin:0 auto;padding:18px}
+h2{font-size:18px;margin:26px 0 4px}.ayuda{color:var(--mut);font-size:13px;margin:0 0 12px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-bottom:14px;font-size:14px}summary{cursor:pointer;font-weight:600}
+.ctl{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+.seg button{border:0;background:#fff;padding:8px 14px;cursor:pointer;font:inherit}.seg button.on{background:var(--ink);color:#fff}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.tabs button{border:1px solid var(--line);background:#fff;border-radius:20px;padding:8px 16px;cursor:pointer;font:inherit}
+.tabs button.on{background:var(--rojo);border-color:var(--rojo);color:#fff;font-weight:600}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.chip{display:flex;align-items:center;gap:8px;border:2px solid var(--line);background:#fff;border-radius:12px;padding:6px 10px;cursor:pointer;font:inherit;text-align:left;max-width:290px}
+.chip.on{border-color:var(--rojo);background:#fff4f5}.chip span{font-size:13px}
+.ph{position:relative;flex:none;background:#eef1f4;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#9aa5b1;font-weight:700;overflow:hidden}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.card.colgate{border:2px solid var(--rojo)}.card .ph{width:100%;height:150px;font-size:40px}
+.marca{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}.colgate .marca{color:var(--rojo)}
+.nombre{font-weight:600;min-height:42px}.tam{color:var(--mut);font-size:13px}
+.precio{font-size:22px;font-weight:700}.porl{font-size:13px;color:var(--mut)}
+.b{display:inline-block;padding:3px 9px;border-radius:12px;font-size:12px;font-weight:600;background:#eef1f4;color:var(--mut)}
+.b.up{background:#fde8eb;color:var(--mal)}.b.dn{background:#e1f5ee;color:var(--ok)}
+.fila{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--mut)}
+.hero{display:flex;gap:18px;align-items:center;background:var(--card);border:2px solid var(--rojo);border-radius:14px;padding:14px;margin:6px 0 16px;flex-wrap:wrap}
+.hero .ph{width:130px;height:130px;font-size:36px}.hero .precio{font-size:28px}
+.veredicto{font-size:15px;font-weight:700;padding:8px 10px;border-radius:10px;text-align:center}
+.veredicto.up{background:#fde8eb;color:var(--mal)}.veredicto.dn{background:#e1f5ee;color:var(--ok)}.veredicto.n{background:#eef1f4;color:var(--mut)}
+.vacio{background:#fff;border:1px dashed var(--line);border-radius:12px;padding:18px;color:var(--mut)}
+.usd{font-size:15px;font-weight:600;color:var(--ok)}
+.hist{background:none;border:0;padding:0;margin:4px 0 0;font-size:12px}.hist summary{font-weight:400;color:var(--mut)}.hist table{width:100%;margin-top:4px}.hist td{padding:2px 0}.hist td:last-child{text-align:right}
+@media(max-width:480px){main{padding:12px}header{padding:14px 16px}.card .ph{height:130px}.hero .ph{width:100px;height:100px}}
+</style></head><body>
+<header><h1>Precios Farmatodo · Colgate vs competencia</h1><p id="sub"></p></header>
+<main>
+<details><summary>¿Cómo leer este panel?</summary>
+<p><b>Precio normal:</b> el precio de lista, sin descuentos. <b>Con promoción abierta:</b> incluye descuentos que ve cualquier cliente, pero no el "15% primera compra por delivery".</p>
+<p><b>US$:</b> el precio en bolívares dividido entre la tasa oficial del BCV de ese día. <b>Comparación:</b> se compara el precio de cada presentación tal cual (por ejemplo 750 ml contra 400 ml). <b>Por litro:</b> solo se muestra en los productos de 1 litro.</p>
+<p><b>Rojo / "más caro":</b> el producto Colgate cuesta más que el rival. <b>Verde / "más barato":</b> cuesta menos.</p></details>
+<div class="ctl"><div class="seg" id="seg"><button data-t="0" class="on">Precio normal</button><button data-t="1">Con promoción abierta</button></div>
+<label><input type="checkbox" id="otras"> Mostrar también otras marcas</label></div>
+<div class="tabs" id="tabs"></div>
+<h2>1. Compara un producto Colgate</h2><p class="ayuda">Elige un producto Colgate y mira cómo se compara con cada rival de la misma categoría.</p>
+<div class="chips" id="chips"></div><div id="cmp"></div>
+<h2>2. Todos los productos de la categoría</h2><p class="ayuda" id="ayuda2"></p><div class="grid" id="todos"></div>
+</main>
+<script>
+const D=__DATOS__,F=D.fechas,HOY=F[F.length-1],AYER=F[F.length-2];
+const addDias=(f,n)=>new Date(Date.parse(f)+n*864e5).toISOString().slice(0,10);
+const SEM=F.filter(f=>f<=addDias(HOY,-7)).pop();
+let cat=D.categorias[0],tipo=0,sel=null;const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt=n=>n==null?"—":n.toLocaleString("es-VE",{minimumFractionDigits:2,maximumFractionDigits:2});
+const precio=(p,f)=>p.h[f]?p.h[f][tipo]:null;
+const porL=(p,f)=>{const v=precio(p,f);return v&&p.cantidad?v/p.cantidad*1000:null};
+const tasa=f=>D.tasas&&D.tasas[f]||null;
+const usd=(p,f)=>{const v=precio(p,f),t=tasa(f);return v&&t?v/t:null};
+const deltaU=(p,f)=>{const a=usd(p,HOY),b=f&&usd(p,f);return a&&b?(a/b-1)*100:null};
+const hist=p=>`<details class="hist"><summary>Historial día a día</summary><table>${F.filter(f=>p.h[f]).reverse().map(f=>`<tr><td>${f.split("-").reverse().join("/")}</td><td>Bs ${fmt(p.h[f][tipo])}</td><td>US$ ${fmt(usd(p,f))}</td></tr>`).join("")}</table></details>`;
+const porLitro=p=>p.unidad=="ml"&&p.cantidad==1000?`<div class="porl">Bs ${fmt(precio(p,HOY))} por litro</div>`:"";
+const unid=p=>p.unidad=="g"?"kg":"litro";
+const delta=(p,f)=>{const a=precio(p,HOY),b=f&&precio(p,f);return a&&b?(a/b-1)*100:null};
+const tam=p=>!p.cantidad?"—":p.cantidad>=1000?p.cantidad/1000+(p.unidad=="ml"?" L":" kg"):p.cantidad+(p.unidad=="ml"?" ml":" g");
+const foto=(p,css="")=>`<div class="ph" style="${css}">${esc(p.marca.slice(0,2).toUpperCase())}${p.img?`<img src="${esc(p.img)}" referrerpolicy="no-referrer" alt="" onerror="this.remove()">`:""}</div>`;
+const badge=d=>d==null?'<span class="b">sin datos</span>':Math.abs(d)<.05?'<span class="b">sin cambio</span>':`<span class="b ${d>0?"up":"dn"}">${d>0?"▲":"▼"} ${Math.abs(d).toFixed(1)}%</span>`;
+const cambio=(p,f,txt)=>`<div class="fila">${txt} Bs ${badge(delta(p,f))} US$ ${badge(deltaU(p,f))}</div>`;
+function tarjeta(p,extra=""){return `<div class="card ${p.rol}">${foto(p)}<div class="marca">${esc(p.marca)}${p.rol=="colgate"?" · Colgate":""}</div><div class="nombre">${esc(p.nombre)}</div><div class="tam">${tam(p)}</div><div class="precio">Bs ${fmt(precio(p,HOY))}</div><div class="usd">US$ ${fmt(usd(p,HOY))}</div>${porLitro(p)}${extra}${hist(p)}</div>`}
+function veredicto(c,r){const a=precio(c,HOY),b=precio(r,HOY);if(!a||!b)return'<div class="veredicto n">No se puede comparar</div>';
+ const d=(a/b-1)*100,dif=Math.abs(a-b),T=tasa(HOY);
+ const t=Math.abs(d)<.5?["n","Mismo precio"]:d>0?["up",`Colgate es ${d.toFixed(1)}% más caro`]:["dn",`Colgate es ${Math.abs(d).toFixed(1)}% más barato`];
+ return `<div class="veredicto ${t[0]}">${t[1]}</div><div class="fila">${tam(c)} (Colgate) vs ${tam(r)} · diferencia Bs ${fmt(dif)}${T?` (US$ ${fmt(dif/T)})`:""}</div>`}
+function render(){
+ $("tabs").innerHTML=D.categorias.map(c=>`<button class="${c===cat?"on":""}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+ document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{cat=b.dataset.c;sel=null;render()});
+ const L=D.productos.filter(p=>p.categoria===cat&&p.h[HOY]&&($("otras").checked||p.rol!=="otra"))
+  .sort((a,b)=>(a.rol=="colgate"?0:1)-(b.rol=="colgate"?0:1)||a.marca.localeCompare(b.marca)||(porL(a,HOY)||0)-(porL(b,HOY)||0));
+ const col=L.filter(p=>p.rol=="colgate"),riv=L.filter(p=>p.rol!="colgate");
+ const c=col.find(p=>p.id===sel)||col[0];
+ $("chips").innerHTML=col.map(p=>`<button class="chip ${c&&p.id===c.id?"on":""}" data-id="${esc(p.id)}">${foto(p,"width:44px;height:44px;font-size:14px")}<span>${esc(p.nombre)}</span></button>`).join("");
+ document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{sel=b.dataset.id;render()});
+ $("cmp").innerHTML=!c?'<div class="vacio">Hoy no hay productos Colgate en esta categoría. Abajo puedes ver los precios de la competencia.</div>':
+  `<div class="hero">${foto(c)}<div><div class="marca" style="color:var(--rojo)">${esc(c.marca)} · Colgate</div><div class="nombre" style="min-height:0">${esc(c.nombre)}</div><div class="tam">${tam(c)}</div><div class="precio">Bs ${fmt(precio(c,HOY))}</div><div class="usd">US$ ${fmt(usd(c,HOY))}</div>${porLitro(c)}</div></div>`+
+  (riv.length?`<div class="grid">${riv.map(r=>tarjeta(r,veredicto(c,r))).join("")}</div>`:'<div class="vacio">No hay productos rivales hoy en esta categoría.</div>');
+ $("ayuda2").textContent=`${L.length} producto(s). Los de Colgate tienen borde rojo.`;
+ $("todos").innerHTML=L.map(p=>tarjeta(p,cambio(p,AYER,"Vs ayer:")+cambio(p,SEM,"Vs hace 7 días:"))).join("")||'<div class="vacio">Sin productos.</div>';
+}
+$("sub").textContent=F.length?`Datos del ${HOY.split("-").reverse().join("/")} · ${F.length} día(s) registrados · Farmatodo Caracas`+(tasa(HOY)?` · Tasa BCV: Bs ${fmt(tasa(HOY))} por US$`:" · Sin tasa BCV del día"):"Sin datos todavía";
+document.querySelectorAll("#seg button").forEach(b=>b.onclick=()=>{tipo=+b.dataset.t;document.querySelectorAll("#seg button").forEach(x=>x.classList.toggle("on",x===b));render()});
+$("otras").onchange=render;
+if(F.length)render();
+if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
+</script></body></html>
